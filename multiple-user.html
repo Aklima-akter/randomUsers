@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            color: rgb(27, 3, 3);
+        }
+
+        i {
+            font-size: 30px;
+            color: rgb(211, 75, 75);
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        #display {
+            height: 50px;
+        }
+
+    </style>
+</head>
+
+<body class="m-3 overflow-hidden d-flex align-items-center">
+
+
+    <section class="container text-dark">
+        <div class="w-50 mx-auto p-3 bg-light rounded border-1 border-dark text-primary">
+            <div class="profile-img d-flex justify-content-center">
+                <img id="profile" width="200px" height="200px" class="border rounded-circle" src="" alt="">
+            </div>
+            <p id="intro" class="text-center mb-0 mt-3"></p>
+            <h3 id="display" class="text-center mt-2"></h3>
+            <div class="button-holder d-flex justify-content-center">
+                <button id="name" class="btn"><i class="fas fa-user-tie"></i></button>
+                <button id="email" class="btn"><i class="far fa-envelope"></i></button>
+                <button id="dob" class="btn"><i class="fas fa-calendar-alt"></i></button>
+                <button id="phone" class="btn"><i class="fas fa-phone"></i></button>
+                <button id="address" class="btn"><i class="fas fa-street-view"></i></button>
+                <button id="password" class="btn"><i class="fas fa-lock"></i></button>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button onclick="loadUser()" class="btn  btn-info text-white">Load User</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="user.js"></script>
+</body>
+
+</html>
